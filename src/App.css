@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url(./ocean.gif);
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titulo-container {
+  height: 10vh;
+  padding-top: 1rem;
+  font-family: cursive;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.first-container {
+  padding: 0px 20px;
+}
+
+.first-container,
+.second-container {
+  height: fit-content;
+}
+
+.titulo-container,
+.first-container,
+.second-container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.last {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.last::after {
+  content: "<---- Revelá el cuadrado oculto :0";
+  font-size: 1.3rem;
+  width: 10rem;
+  position: relative;
+  top: -6.5rem;
+  left: 13rem;
+  font-family: cursive;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #000000;
+}
+
+.diamond {
+  background-image: url(http://31.media.tumblr.com/7993bc91c0b17173c9b4ffdd215ff1ed/tumblr_mlb0htyzfo1qe1uqko1_400.gif);
+}
+
+.display {
+  display: inline !important;
+}
+
+.block {
+  border: 0.1rem solid rgb(255, 255, 255);
+  padding: 0rem 0.1rem;
+  cursor: pointer;
+  margin: 2rem 5rem;
+  transition: 0.2s;
+  background-color: rgba(255, 255, 255, 0.089);
+  border-radius: 0.7rem;
+  width: 10rem;
+  height: 8rem;
+  color: transparent;
+}
+
+.block p {
+  margin: 0;
+  font-family: fantasy, Arial, sans-serif;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  -webkit-box-shadow: -3px 6px 15px -5px rgba(0, 0, 0, 0.48);
+  box-shadow: -3px 6px 15px -5px rgba(0, 0, 0, 0.48);
+  color: black;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.946);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    201deg,
+    rgba(255, 255, 255, 1) 49%,
+    rgba(234, 243, 255, 1) 78%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 0.9rem;
+}
+
+.inactive:hover {
+  border: 0.1rem solid rgba(255, 255, 255, 0.637);
+  background-color: rgba(127, 255, 212, 0.446);
+}
+
+@media (max-width: 480px) {
+  .block {
+    width: 5rem;
+    height: 5rem;
+    margin: 3rem 2rem;
   }
-  to {
-    transform: rotate(360deg);
+  .block p {
+    font-size: 1rem;
+  }
+  .block.last {
+    font-size: 1rem;
+    margin-top: -12px;
+  }
+  .block.last p {
+    font-size: 0.8rem !important;
+  }
+  .last::after {
+    top: -4.9rem;
+    left: 6rem;
+    line-height: 1;
+  }
+  .first-container {
+    margin-top: -18px;
   }
 }
