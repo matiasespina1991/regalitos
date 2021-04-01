@@ -5,6 +5,7 @@
 body {
   background-image: url(./ocean.gif);
   background-size: cover;
+  overscroll-behavior: none;
 }
 
 .titulo-container {
