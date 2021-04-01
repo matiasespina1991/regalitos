@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/regalitos/static/css/main.093feb2b.chunk.css",
+    "main.js": "/regalitos/static/js/main.0648a6ae.chunk.js",
+    "main.js.map": "/regalitos/static/js/main.0648a6ae.chunk.js.map",
+    "runtime-main.js": "/regalitos/static/js/runtime-main.b9e0d8fc.js",
+    "runtime-main.js.map": "/regalitos/static/js/runtime-main.b9e0d8fc.js.map",
+    "static/js/2.26ce2576.chunk.js": "/regalitos/static/js/2.26ce2576.chunk.js",
+    "static/js/2.26ce2576.chunk.js.map": "/regalitos/static/js/2.26ce2576.chunk.js.map",
+    "static/js/3.a22d5dd2.chunk.js": "/regalitos/static/js/3.a22d5dd2.chunk.js",
+    "static/js/3.a22d5dd2.chunk.js.map": "/regalitos/static/js/3.a22d5dd2.chunk.js.map",
+    "index.html": "/regalitos/index.html",
+    "static/css/main.093feb2b.chunk.css.map": "/regalitos/static/css/main.093feb2b.chunk.css.map",
+    "static/js/2.26ce2576.chunk.js.LICENSE.txt": "/regalitos/static/js/2.26ce2576.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/regalitos/static/media/ocean.c41ed3f8.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9e0d8fc.js",
+    "static/js/2.26ce2576.chunk.js",
+    "static/css/main.093feb2b.chunk.css",
+    "static/js/main.0648a6ae.chunk.js"
+  ]
+}
